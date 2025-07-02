@@ -67,7 +67,7 @@ async function run() {
         .find(query)
         .sort({ quantity: -1 })
         .skip(0)
-        .limit(6);
+        .limit(8);
       const result = await cursor.toArray();
       res.send(result);
     });
